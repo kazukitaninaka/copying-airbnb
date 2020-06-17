@@ -1,0 +1,501 @@
+body {
+  font-family: ”Roboto, "Helvetica Neue", sans-serif;
+}
+header {
+  color: #484848;
+  margin-top: 0;
+  padding-top: 0;
+}
+header nav {
+  border-bottom: 1px solid #ebebeb;
+}
+header .sticky-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  background-color: #fff;
+}
+header .header-logo {
+  margin: 0px 30px 0 20px;
+}
+header .header-logo img {
+  max-width: 100%;
+}
+header .pc-header-left {
+  display: flex;
+  width: 380px;
+  margin-top: 15px;
+}
+header .pc-header-left .navbar-brand {
+  width: 30px;
+}
+header nav .pc-header-left #nonpc-nav-click {
+  display: none;
+}
+header nav #nav-toggle {
+  display: none;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+header nav #nav-toggled {
+  display: none;
+  z-index: 100;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+header nav .navbar-nav {
+  display: flex;
+  font-size: 14px;
+  padding-top: 5px;
+}
+header nav ul li {
+  padding-right: 15px;
+}
+header nav ul li .nav-link {
+  color: #484848;
+  text-decoration: none;
+  padding-right: 0;
+}
+header nav ul li .selected {
+  color: #80c2c4;
+  border-bottom: solid 2px #80c2c4;
+  padding-bottom: 30px;
+}
+header nav ul li .nav-link:hover {
+  text-decoration: underline;
+  color: #484848;
+}
+header nav ul li .selected:hover {
+  text-decoration: none;
+  color: #80c2c4;
+  cursor: default;
+}
+header .pc-header-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 26%;
+  margin-right: 75px;
+  margin-top: 15px;
+  height: 64px;
+}
+header .pc-header-right button {
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-bottom: 75px;
+  padding: 0 5px;
+  margin-right: 5px;
+}
+header .pc-header-right .income {
+  font-size: 14px;
+  margin-top: 10px;
+}
+header .pc-header-right .popup {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .pc-header-right .popup .content {
+  background: #fff;
+  padding: 30px;
+  width: 50%;
+}
+header .pc-header-right .money {
+  font-size: 24px;
+  padding-right: 15px;
+}
+header .pc-header-right .start {
+  margin-top: 10px;
+}
+header .pc-header-right .start a {
+  border: solid 1px #db3742;
+  background-color: #db3742;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 17px;
+}
+
+@media screen and (max-width: 1126px) {
+  header {
+    background-image: url(../images/airbnb-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 310px;
+  }
+  header .header-logo {
+    margin: 0;
+  }
+  header .sticky-top {
+    height: 0;
+  }
+  header nav .pc-header-left {
+    margin-top: 35px;
+  }
+  header nav .pc-header-left #nav-toggle {
+    color: #fff;
+  }
+  header nav #nav-toggled #nonpc-nav-click2 {
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    margin: 35px 0 0 20px;
+  }
+  header nav #nav-toggled .navbar-nav {
+    padding: 0 50px;
+  }
+  header nav .pc-header-left .navbar-nav {
+    display: none;
+  }
+  header nav .pc-header-left #pc-nav-click {
+    display: none;
+  }
+  header nav .pc-header-left #nonpc-nav-click {
+    display: block;
+    padding: 0;
+    margin-left: 20px;
+    width: 35px;
+  }
+  header .nonpc-headline {
+    display: block;
+    color: #fff;
+    padding-top: 190px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  header nav .pc-header-left a {
+    margin: 0;
+    margin-left: 25px;
+  }
+  header nav .pc-header-left button {
+    height: 0;
+  }
+
+  header nav .pc-header-right {
+    display: none;
+  }
+}
+
+main .nonpc-search {
+  display: none;
+}
+main .relative {
+  position: relative;
+  margin-bottom: 70px;
+}
+main .relative .trim {
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+}
+
+main .absolute {
+  position: absolute;
+  width: 32%;
+  background-color: #fff;
+  top: 75px;
+  right: 90px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 16px;
+  letter-spacing: 0.01rem;
+  line-height: 1;
+}
+main .absolute h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  line-height: 1;
+}
+main .absolute p {
+  margin-bottom: 12px;
+  color: #484848;
+}
+main .absolute input {
+  width: 100%;
+  padding: 15px 12px;
+  border: solid 1px #ebebeb;
+  border-radius: 5px;
+  color: #484848;
+  margin-bottom: 10px;
+}
+main .absolute .selections {
+  margin-bottom: 30px;
+}
+main .absolute .for-flex .room-type {
+  width: 56.25%;
+}
+main .absolute .for-flex .room-type select {
+  width: 100%;
+  color: #484848;
+  background-image: url(../images/arrow.jpg);
+  background-repeat: no-repeat;
+  background-size: 17px 10px;
+  background-position: right 10px center;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 15px 10px;
+  border: solid 1px #ebebeb;
+}
+main .absolute .for-flex .room-type select::-ms-expand {
+  display: none;
+}
+main .absolute .for-flex .numbpeople {
+  width: 38.75%;
+}
+main .absolute .for-flex .numbpeople select {
+  width: 100%;
+  color: #484848;
+  background-image: url(../images/arrow.jpg);
+  background-repeat: no-repeat;
+  background-size: 17px 10px;
+  background-position: right 10px center;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 15px 10px;
+  border: solid 1px #ebebeb;
+}
+main .absolute .in-come {
+  color: #484848;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+main .absolute .in-come span {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+main .absolute .in-come button {
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 0 5px;
+}
+main .absolute .start-button {
+  padding: 15px auto;
+}
+main .absolute .start-button:hover {
+  text-decoration: none;
+}
+main .absolute .start {
+  width: 100%;
+  text-align: center;
+  background-color: #db3742;
+  color: #fff;
+  padding: 15px 0;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 71.6%;
+}
+main .container .description1 {
+  display: flex;
+  justify-content: space-between;
+}
+main .container .description1 .description1-1 {
+  width: 42.7%;
+  letter-spacing: 0;
+}
+main .container .description1 .description1-1 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #484848;
+  margin-bottom: 30px;
+}
+main .container .description1 .description1-1 p {
+  font-size: 16px;
+  color: #484848;
+}
+.for-border {
+  border: solid 1px #484848;
+  width: 65px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+main .container .hosting-steps .steps-description h2 {
+  font-size: 60px;
+  margin-bottom: 70px;
+  font-weight: 60px;
+}
+main .container .hosting-steps .steps-description .steps {
+  display: flex;
+  justify-content: space-between;
+}
+main .container .hosting-steps .steps-description .steps .each-step {
+  width: 28%;
+}
+main
+  .container
+  .hosting-steps
+  .steps-description
+  .steps
+  .each-step
+  .circle-check {
+  width: 50px;
+  margin-bottom: 20px;
+}
+main
+  .container
+  .hosting-steps
+  .steps-description
+  .steps
+  .each-step
+  .circle-check
+  img {
+  max-width: 100%;
+}
+main .container .hosting-steps .steps-description .steps .each-step h3 {
+  font-size: 24px;
+  color: #484848;
+  margin-bottom: 30px;
+}
+main .container .hosting-steps .steps-description .steps .each-step p {
+  font-size: 16px;
+  color: #484848;
+}
+
+@media screen and (max-width: 1126px) {
+  main .nonpc-search {
+    display: block;
+    top: 75px;
+    right: 90px;
+    font-size: 16px;
+    letter-spacing: 0.01rem;
+    line-height: 1;
+    margin: 50px auto;
+  }
+  main .nonpc-search h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1;
+  }
+  main .nonpc-search p {
+    margin-bottom: 12px;
+    color: #484848;
+  }
+  main .nonpc-search input {
+    width: 100%;
+    padding: 15px 12px;
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    color: #484848;
+    margin-bottom: 10px;
+  }
+  main .nonpc-search .selections {
+    margin-bottom: 30px;
+  }
+  main .nonpc-search .for-flex .room-type {
+    width: 56.25%;
+  }
+  main .nonpc-search .for-flex .room-type select {
+    width: 100%;
+    color: #484848;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-size: 17px 10px;
+    background-position: right 10px center;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 15px 10px;
+    border: solid 1px #ebebeb;
+  }
+  main .nonpc-search .for-flex .room-type select::-ms-expand {
+    display: none;
+  }
+  main .nonpc-search .for-flex .numbpeople {
+    width: 38.75%;
+  }
+  main .nonpc-search .for-flex .numbpeople select {
+    width: 100%;
+    color: #484848;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-size: 17px 10px;
+    background-position: right 10px center;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 15px 10px;
+    border: solid 1px #ebebeb;
+  }
+  main .nonpc-search .in-come {
+    color: #484848;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  main .nonpc-search .in-come span {
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  main .nonpc-search .in-come button {
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 0 5px;
+  }
+  main .nonpc-search .start-button {
+    padding: 15px auto;
+  }
+  main .nonpc-search .start-button:hover {
+    text-decoration: none;
+  }
+  main .nonpc-search .start {
+    width: 100%;
+    text-align: center;
+    background-color: #db3742;
+    color: #fff;
+    padding: 15px 0;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  main .relative {
+    display: none;
+  }
+  main .relative .trim {
+    display: none;
+  }
+  main .container .description1 {
+    display: block;
+  }
+  main .container .description1 .description1-1 {
+    width: 100%;
+  }
+  main .container .hosting-steps .steps-description h2 {
+    font-size: 40px;
+  }
+  main .container .hosting-steps .steps-description .steps {
+    display: block;
+  }
+  main .container .hosting-steps .steps-description .steps .each-step {
+    width: 100%;
+  }
+}
